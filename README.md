@@ -26,7 +26,7 @@ cd linux-4.16
 make ${BUILD_ARGS} bzImage
 
 # Build the modules and install in the present working directory (optional)
-export INSTALL_MOD_PATH=$(PWD)
+INSTALL_MOD_PATH=$(PWD)
 rm -rf lib
 make ${BUILD_ARGS} modules
 make modules_install
